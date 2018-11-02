@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  resources :students, only: :index
+  resources :students, :except => [:create, :new, :edit, :update, :destroy]
 end
